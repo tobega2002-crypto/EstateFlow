@@ -36,7 +36,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cities");
+                    b.ToTable("Cities", (string)null);
 
                     b.HasData(
                         new
@@ -91,7 +91,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("Contracts");
+                    b.ToTable("Contracts", (string)null);
                 });
 
             modelBuilder.Entity("EstateFlow.Domain.Expense", b =>
@@ -125,7 +125,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("Expenses");
+                    b.ToTable("Expenses", (string)null);
 
                     b.HasData(
                         new
@@ -211,7 +211,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("ProviderId");
 
-                    b.ToTable("Invoices");
+                    b.ToTable("Invoices", (string)null);
                 });
 
             modelBuilder.Entity("EstateFlow.Domain.Meter", b =>
@@ -255,7 +255,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("UtilityTypeId");
 
-                    b.ToTable("Meters");
+                    b.ToTable("Meters", (string)null);
 
                     b.HasData(
                         new
@@ -343,7 +343,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("MeterId");
 
-                    b.ToTable("MeterReadings");
+                    b.ToTable("MeterReadings", (string)null);
 
                     b.HasData(
                         new
@@ -443,7 +443,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("Payments");
+                    b.ToTable("Payments", (string)null);
 
                     b.HasData(
                         new
@@ -549,7 +549,7 @@ namespace EstateFlow.Infrastructure.Migrations
                     b.HasIndex("Code")
                         .IsUnique();
 
-                    b.ToTable("Properties");
+                    b.ToTable("Properties", (string)null);
 
                     b.HasData(
                         new
@@ -607,7 +607,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("PropertyId");
 
-                    b.ToTable("PropertyImages");
+                    b.ToTable("PropertyImages", (string)null);
 
                     b.HasData(
                         new
@@ -666,7 +666,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("UtilityTypeId");
 
-                    b.ToTable("Providers");
+                    b.ToTable("Providers", (string)null);
 
                     b.HasData(
                         new
@@ -724,7 +724,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasIndex("TenantId");
 
-                    b.ToTable("Rentals");
+                    b.ToTable("Rentals", (string)null);
 
                     b.HasData(
                         new
@@ -769,7 +769,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tenants");
+                    b.ToTable("Tenants", (string)null);
 
                     b.HasData(
                         new
@@ -803,7 +803,7 @@ namespace EstateFlow.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UtilityTypes");
+                    b.ToTable("UtilityTypes", (string)null);
 
                     b.HasData(
                         new
